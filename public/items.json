@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Yamaha YZF R15 V3",
+        "img": "https://i.ibb.co/JsXdVwN/1-Yamaha-R15-v3.png",
+        "description": "R15 is still the best sporting bike manufactured by the great Yamaha company in Bangladesh which is just 150cc. According to the BRTA law, the riders of Bangladesh can ride the highest 165 cc bikes and among them, Yamaha YZF R15 is the most sporty-looking bike and most popular to the young generation.",
+        "price": 485000,
+        "quantity": 12,
+        "supplier": "Letitia Burt"
+    },
+    {
+        "id": 2,
+        "name": "honda CBR 150R",
+        "img": "https://i.ibb.co/SwSBvtg/2-honda-cbr.png",
+        "description": "Honda is one of the three world’s renowned motorbike company which used to compete in MotoGP racing competition every year. Honda has launched CBR 150R in Bangladesh at the same time when Yamaha released their key bike R15. ",
+        "price": 580000,
+        "quantity": 5,
+        "supplier": "Geraldine Beard"
+    },
+    {
+        "id": 3,
+        "name": "Aprilia GPR 150",
+        "img": "https://i.ibb.co/kQs57Mc/3-Aprilia-GPR.png",
+        "description": "The Italian motorcycle manufacturing brand Aprilia is now doing its business with Runner Automobiles Ltd in Bangladesh. Now this brand has a verse collection of motorcycles from scooters to sports segments.",
+        "price": 390000,
+        "quantity": 8,
+        "supplier": "Concepcion Mclaughlin"
+    },
+    {
+        "id": 4,
+        "name": "GPX Demon GR 165R",
+        "img": "https://i.ibb.co/Rj9t3hg/4-GPX-Demon.png",
+        "description": "GPX Demon GR 165R is one of the great looking motorcycle with amazing engine performance. The design and dimensions are almost the similar to its elder sibling. ",
+        "price": 359900,
+        "quantity": 7,
+        "supplier": "Tabitha Franklin"
+    },
+    {
+        "id": 5,
+        "name": "KTM RC 125",
+        "img": "https://i.ibb.co/r0bHjcq/5-ktm-rc.png",
+        "description": "KTM is an Austrian origin motorcycle brand and now they are getting popular all over the world. Their price range is too high because of the quality of their products. KTM RC 125 is an entry-level full faired sports bike from this company.",
+        "price": 470000,
+        "quantity": 8,
+        "supplier": "Cochran Payne"
+    },
+    {
+        "id": 6,
+        "name": "JSuzuki GSX R150",
+        "img": "https://i.ibb.co/cFR1sD0/6-Suzuki-GSX.png",
+        "description": "In 2019, another world-class motorbike company Suzuki has launched a new sports bike in Bangladesh which is GSX R150 and in just a couple of weeks, it is available in the Bangladeshi market. ",
+        "price": 379990,
+        "quantity": 15,
+        "supplier": "Dale Webb"
+    },
+    {
+        "id": 7,
+        "name": "Suzuki Gixxer SF ",
+        "img": "https://i.ibb.co/5jtgzH4/7-suzuki-gixxer.png",
+        "description": "The new Gixxer SF is also a Suzuki-branded two-wheeler bike that is getting popular in Bangladesh every day. It is also considered as one of the top five sports bikes in Bangladesh. ",
+        "price": 291950,
+        "quantity": 10,
+        "supplier": "Best Weeks"
+    },
+    {
+        "id": 8,
+        "name": "Taro GP 1 V3",
+        "img": "https://i.ibb.co/cDsQSQ7/8-Taro-GP.png",
+        "description": "Taro GP-1 V3 is a stylish-looking sports bike that will be imported here in Bangladesh by Taro Bangla. It has a completely different-looking front end which is pretty wide. ",
+        "price": 356000,
+        "quantity": 3,
+        "supplier": "Horn Whitfield"
+    },
+    {
+        "id": 9,
+        "name": "Lifan KPR 165 FI",
+        "img": "https://i.ibb.co/jyZmrww/9-Lifan-KPR.png",
+        "description": "Lifan is one of the famous and largest Chinese origin motorcycle brands. When they launch KPR 150 first time in Bangladesh, it was able to create a craze among young generation riders. ",
+        "price": 210000,
+        "quantity": 5,
+        "supplier": "Mcfadden Strong"
+    },
+    {
+        "id": 10,
+        "name": "Keeway RKR 165",
+        "img": "https://i.ibb.co/n0BsHst/10-RKR-165.png",
+        "description": "This Hungarian motorcycle brand trying to take a place in the Bangladesh motorcycle market. Recently they launched Keeway RKR 165 in the market. This racing monster comes with raw engine power and attractive graphics.",
+        "price": 215000,
+        "quantity": 4,
+        "supplier": "Berger Mckenzie"
+    },
+    {
+        "id": 11,
+        "name": "Benelli TNT 150",
+        "img": "https://i.ibb.co/SXB0jdp/11-Benelli-motorents.png",
+        "description": "Benelli TNT 150i is an entry-level naked streetfighter motorcycle. It is powered by a 1-cylinder, 4-stroke engine that is mated to a 5-speed gearbox. It has a sporty design that looks unique and it comes fitted with high-end premium parts.",
+        "price": 222000,
+        "quantity": 7,
+        "supplier": "Althea Moran"
+    },
+    {
+        "id": 12,
+        "name": "Effie Garrett",
+        "img": "https://i.ibb.co/HThyVRw/12-Yamaha-YZF.png",
+        "description": "YZF-R15M is designed to deliver unparalleled racing authenticity. It is available in two color variations: Icon Performance with an SRP of 189,500 and Anniversary White (WGP 60th Anniversary edition) with an SRP of 193,500",
+        "price": 540000,
+        "quantity": 16,
+        "supplier": "Althea Moran"
+    }
+]
