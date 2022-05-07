@@ -57,7 +57,6 @@ const Login = () => {
     return (
         <div className='form-container'>
             <h2 className='title'>Login</h2>
-            <SocialLogin></SocialLogin>
             <form className='input-group' onSubmit={handleLogin}>
                 <input ref={emailRef} type="email" name="email" placeholder='Your Email' required />
                 <input type="password" name="password" placeholder='Password' required />
@@ -68,6 +67,7 @@ const Login = () => {
                 <Link className='form-link ms-1' to='/register'>Please Register</Link>
             </p>
             <p className='mt-2 text-white'>Forget Password?<button className='reset-btn' onClick={handleResetPassword}>Reset Password</button></p>
+            <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
         </div>
     );

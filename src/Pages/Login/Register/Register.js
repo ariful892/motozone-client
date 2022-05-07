@@ -49,7 +49,7 @@ const Register = () => {
     return (
         <div className='form-container'>
             <h2 className='title'>Register</h2>
-            <SocialLogin></SocialLogin>
+
             <form className='input-group' onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' required />
                 <input type="email" name="email" id="" placeholder='Your Email' required />
@@ -61,6 +61,8 @@ const Register = () => {
             <p className='text-white'>Already have an account?
                 <Link className='form-link ms-1' to='/login'>Login</Link>
             </p>
+
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

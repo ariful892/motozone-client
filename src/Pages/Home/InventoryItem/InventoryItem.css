@@ -24,3 +24,8 @@
     background-color: rgb(149, 230, 29);
     font-weight: bold;
 }
+
+.manage-btn:hover {
+    background-color: white;
+    border: 1px solid rgb(149, 230, 29);
+}
