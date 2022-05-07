@@ -1,0 +1,23 @@
+.banner-container {
+    display: flex;
+    margin: 50px;
+}
+
+.title-container {
+    margin-top: 50px;
+    width: 55%;
+    margin-right: 15px;
+}
+
+.title {
+    color: rgb(149, 230, 29);
+    font-size: 50px;
+}
+
+.banner {
+    width: 45%;
+}
+
+.banner img {
+    border-radius: 10%;
+}

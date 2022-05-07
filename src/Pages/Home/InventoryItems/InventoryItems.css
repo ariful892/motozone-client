@@ -1,0 +1,14 @@
+.inventory-title {
+    font-size: 35px;
+    margin-top: 80px;
+    color: rgb(149, 230, 29);
+    text-align: center;
+}
+
+.items-container {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 80px;
+}

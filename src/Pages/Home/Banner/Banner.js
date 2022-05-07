@@ -1,14 +1,18 @@
 import React from 'react';
 import banner from '../../../images/banner/motozone-banner.png';
+import './Banner.css';
 
 const Banner = () => {
     return (
-        <div>
+        <div className='banner-container'>
             <div className="title-container">
-                <h1>MotoZone</h1>
+                <h1 className='title'>MotoZone</h1>
+                <p className='text-white'>We have the largest independently owned motorcycle inventory in the United States with over 1,000 motorcycles available for purchase.
+
+                    We sell all Brands and all kinds, so regardless of what your 2 wheeled vice is, we've got it.</p>
             </div>
-            <div className="banner-container">
-                <img src={banner} alt="" />
+            <div className="banner">
+                <img className='img-fluid' src={banner} alt="" />
             </div>
         </div>
     );

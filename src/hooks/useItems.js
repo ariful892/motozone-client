@@ -5,7 +5,7 @@ const useItems = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
         fetch('items.json')
-            .then(ree => res => res.json())
+            .then(res => res.json())
             .then(data => setItems(data))
     }, []);
 
