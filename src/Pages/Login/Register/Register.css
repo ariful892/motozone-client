@@ -24,7 +24,7 @@
     font-size: 15px;
     padding-left: 5px;
     margin-bottom: 18px;
-    border: 1px solid rgb(106, 246, 116);
+    border: 1px solid rgb(149, 230, 29);
     font-size: 16px;
 }
 
@@ -36,23 +36,11 @@
 }
 
 .form-btn:hover {
-    background-color: rgb(90, 80, 240);
-    color: white;
+    background-color: white;
+    border: 1px solid rgb(149, 230, 29);
 }
 
 .form-link {
     color: rgb(149, 230, 29);
     text-decoration: none;
-}
-
-.reset-btn {
-    color: rgb(238, 165, 48);
-    text-decoration: none;
-    border: none;
-    background-color: white;
-    padding-left: 2px;
-}
-
-.reset-btn:hover {
-    color: rgb(99, 99, 246);
 }
