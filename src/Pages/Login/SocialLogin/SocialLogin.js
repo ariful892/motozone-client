@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
@@ -10,19 +10,20 @@ import github from '../../../images/social/github.png';
 const SocialLogin = () => {
 
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+    const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
 
     const navigate = useNavigate();
     let errorElement;
 
-    if (googleError) {
+    if (googleError || gitError) {
         errorElement = <p className='text-danger'>Error: {googleError?.message} </p>
     }
 
-    if (googleLoading) {
+    if (googleLoading || gitLoading) {
         return <Loading></Loading>
     }
 
-    if (googleUser) {
+    if (googleUser || gitUser) {
         navigate('/home');
     }
 
@@ -50,7 +51,7 @@ const SocialLogin = () => {
                     </button>
 
                     <button
-
+                        onClick={() => signInWithGithub()}
                         className='btn btn-secondary w-50 d-block mx-auto my-2'>
                         <img height={19} src={github} alt=''></img>
                         <span className='ps-2'>SignIn With GitHub</span>
