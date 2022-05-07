@@ -7,7 +7,7 @@ const Inventory = () => {
     const { itemId } = useParams();
     const [items] = useItems();
     console.log('items', items);
-    const itemDetail = items.filter(item => itemId !== item.id);
+    const itemDetail = items.filter(item => itemId !== item._id);
 
 
     return (

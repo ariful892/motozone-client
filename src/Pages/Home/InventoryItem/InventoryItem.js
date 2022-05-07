@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 const InventoryItem = ({ item }) => {
 
-    const { id, img, description, price, quantity, supplier } = item;
+    const { _id, img, description, price, quantity, supplier } = item;
     const navigate = useNavigate();
 
     const handleManage = () => {
-        navigate(`/inventory/${id}`)
+        navigate(`/inventory/${_id}`)
     }
     return (
         <div className='item-container'>

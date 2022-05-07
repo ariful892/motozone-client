@@ -14,7 +14,7 @@ const InventoryItems = () => {
             <div className='items-container'>
                 {
                     displayItem.map(item => <InventoryItem
-                        key={item.id}
+                        key={item._id}
                         item={item}
                     ></InventoryItem>)
                 }
