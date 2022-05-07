@@ -1,0 +1,26 @@
+.item-container {
+    height: 600px;
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+}
+
+.item-details {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item-details p {
+    margin-bottom: 3px;
+}
+
+.manage-btn {
+    width: 100%;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(149, 230, 29);
+    font-weight: bold;
+}

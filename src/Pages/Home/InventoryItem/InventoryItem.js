@@ -3,15 +3,18 @@ import './InventoryItem.css';
 
 const InventoryItem = ({ item }) => {
 
-    const { name, img, description, price, quantity, supplier } = item;
+    const { img, description, price, quantity, supplier } = item;
     return (
         <div className='item-container'>
-            <img className='img-fluid rounded' src={img} alt="" />
-            <h4 className='mt-3'>{item.name}</h4>
-            <p>{description}</p>
-            <p>Price: {price}</p>
-            <p>Quantity: {quantity}</p>
-            <p>Supplier: {supplier}</p>
+            <img className='ps-4 pe-4 img-fluid rounded' src={img} alt="" />
+            <div className="item-details">
+                <h4 className='mt-3 mb-1'>{item.name}</h4>
+                <p>{description}</p>
+                <p>Price: {price}</p>
+                <p>Quantity: {quantity}</p>
+                <p>Supplier: {supplier}</p>
+            </div>
+            <button className='manage-btn'>MANAGE</button>
         </div>
     );
 };
