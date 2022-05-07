@@ -1,9 +1,15 @@
 import React from 'react';
 import './InventoryItem.css';
+import { useNavigate } from 'react-router-dom';
 
 const InventoryItem = ({ item }) => {
 
-    const { img, description, price, quantity, supplier } = item;
+    const { id, img, description, price, quantity, supplier } = item;
+    const navigate = useNavigate();
+
+    const handleManage = () => {
+        navigate(`/inventory/${id}`)
+    }
     return (
         <div className='item-container'>
             <img className='ps-4 pe-4 img-fluid rounded' src={img} alt="" />
@@ -14,7 +20,7 @@ const InventoryItem = ({ item }) => {
                 <p>Quantity: {quantity}</p>
                 <p>Supplier: {supplier}</p>
             </div>
-            <button className='manage-btn'>MANAGE</button>
+            <button onClick={handleManage} className='manage-btn'>MANAGE</button>
         </div>
     );
 };
