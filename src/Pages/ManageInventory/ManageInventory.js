@@ -34,9 +34,7 @@ const ManageInventory = () => {
     return (
         <div className='m-5'>
             <h2 className='add-item-title'>Manage Inventory: {items.length}</h2>
-            <div className='text-end'>
-                <button onClick={navigateToAddItem} className='new-item-btn px-3'>Add New Item</button>
-            </div>
+
             {
                 items.map(item => <ManageInventoryItem
                     key={item._id}
@@ -44,6 +42,10 @@ const ManageInventory = () => {
                     handleDelete={handleDelete}
                 ></ManageInventoryItem>)
             }
+
+            <div className='text-end'>
+                <button onClick={navigateToAddItem} className='new-item-btn px-3'>Add New Item</button>
+            </div>
         </div>
     );
 };

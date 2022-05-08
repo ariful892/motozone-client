@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useItemDetails from '../../hooks/useItemDetails';
 
@@ -7,15 +7,19 @@ import './Inventory.css';
 const Inventory = () => {
 
     const { itemId } = useParams();
-    const [item, setItem] = useItemDetails(itemId);
-    const { name, img, description, price, supplier } = item;
+    let [item, setItem] = useItemDetails(itemId);
+    let { name, img, description, price, quantity, supplier } = item;
+    console.log(item);
 
-    let newQuantity = item.quantity;
+    let newQuantity = quantity;
+    let updatedItem;
+
+
 
     const handleDelivered = () => {
         newQuantity = newQuantity - 1;
-        item.quantity = newQuantity;
-        const updatedItem = [...item, item.quantity];
+        quantity = newQuantity;
+        updatedItem = { ...item, quantity };
         setItem(updatedItem);
     }
 
@@ -24,9 +28,27 @@ const Inventory = () => {
 
         const inputQuantity = parseInt(event.target.quantity.value);
         newQuantity = newQuantity + inputQuantity;
-        const updatedItem = [...item, newQuantity];
+        quantity = newQuantity;
+        updatedItem = { ...item, quantity };
         setItem(updatedItem);
     }
+
+    useEffect(() => {
+        const url = `https://nameless-mesa-03450.herokuapp.com/item/${itemId}`;
+
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('Success', data);
+            });
+    }, [item]);
+
 
     return (
         <div className='text-center m-5 text-white'>
@@ -45,7 +67,7 @@ const Inventory = () => {
                 }
                 <p>Supplier: {supplier}</p>
             </div>
-            <button onClick={handleDelivered} className='inventory-btn px-4 py-1'>Delivered</button>
+            <button disabled={newQuantity == 0} onClick={handleDelivered} className='inventory-btn px-4 py-1'>Delivered</button>
             <h4 className='restock-title mt-5'>Restock the item</h4>
             <form onSubmit={handleRestock}>
                 <input className='mt-3 rounded border-0' type="number" name="quantity" id="" required />

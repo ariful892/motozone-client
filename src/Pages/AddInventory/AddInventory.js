@@ -5,7 +5,7 @@ import './AddInventory.css';
 
 const AddInventory = () => {
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
         const url = 'https://nameless-mesa-03450.herokuapp.com/item';
@@ -19,7 +19,8 @@ const AddInventory = () => {
             .then(res => res.json())
             .then(result => {
                 alert('Congratulations your item is added!');
-            })
+            });
+        reset();
     };
 
     return (
