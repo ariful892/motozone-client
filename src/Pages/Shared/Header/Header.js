@@ -26,10 +26,11 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link className='text-white' as={Link} to='/home'>Home</Nav.Link>
                             <Nav.Link className='text-white' href="home#inventory">Inventory</Nav.Link>
-                            <Nav.Link className='text-white' href="home#speciality">Speciality</Nav.Link>
+                            <Nav.Link className='text-white' href="home#about">About</Nav.Link>
                             <Nav.Link className='text-white' as={Link} to='/advanced'>Advanced</Nav.Link>
                         </Nav>
                         <Nav>
+                            <Nav.Link className='text-white' as={Link} to='/blogs'>Blogs</Nav.Link>
                             {
                                 user && <>
                                     <Nav.Link className='text-white' as={Link} to='/manage'>Manage</Nav.Link>

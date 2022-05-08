@@ -14,8 +14,6 @@ const Inventory = () => {
     let newQuantity = quantity;
     let updatedItem;
 
-
-
     const handleDelivered = () => {
         newQuantity = newQuantity - 1;
         quantity = newQuantity;

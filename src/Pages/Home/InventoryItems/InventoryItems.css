@@ -28,3 +28,14 @@
     background-color: white;
     color: red;
 }
+
+
+/********************************************
+     responsive design for mobile devices 
+**********************************************/
+
+@media only screen and (max-width:692px) {
+    .items-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

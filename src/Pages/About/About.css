@@ -1,33 +1,26 @@
-.banner-container {
+.about {
     display: flex;
     margin: 50px;
 }
 
-.title-container {
-    margin-top: 50px;
-    width: 55%;
-    margin-right: 15px;
+.about-img {
+    margin: 50px;
+    border-radius: 40%;
 }
 
-.title {
-    color: rgb(149, 230, 29);
-    font-size: 50px;
+.about-text {
+    color: rgb(214, 172, 238);
+    display: flex;
+    margin-top: 100px;
 }
 
-.banner {
-    width: 45%;
-}
-
-.banner img {
-    border-radius: 10%;
-}
 
 /********************************************
      responsive design for mobile devices 
 **********************************************/
 
 @media only screen and(max-width:692px) {
-    .banner-container {
+    .about {
         flex-direction: column;
     }
 }
