@@ -1,8 +1,33 @@
-# Getting Started with Create React App
+# MotoZone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The website live link (https://assignment11-motozone.web.app/
 
-## Available Scripts
+## Features and functionality
+
+- It's a single page application.
+- There are 8 pages in this application.
+- In Home page there are 6 section. Navbar, Website title and banner, Inventory and About section.
+- Header and Footer are kept as shared component which are shared in every pages.
+- Inventory, Manage inventory, Add and My items page are kept in protected route user have to login to the website to view those page.
+- User will not be able to see the Manage, Add, MyItem if he/she is signed out.
+- Logged in user can delete item from Manage inventory, can add item in Add item and can update quantity in Inventory page.
+- In blogs page discussed about some javascript and nodejs concepts.
+- And also added a not found route.
+
+## Technologies (Frameworks and libraries) for client side
+
+- React Router
+- React Firebase hooks
+- React Bootstrap
+- React Toastify
+- React hook form
+
+## Technologies (Frameworks and libraries) for client side
+
+- Express
+- cors
+- dotenv
+- mongodb
 
 In the project directory, you can run:
 
