@@ -1,0 +1,16 @@
+.buy-item-container {
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    color: white;
+
+}
+
+.buy-item-detail {
+    color: rgb(23, 244, 130);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+}
