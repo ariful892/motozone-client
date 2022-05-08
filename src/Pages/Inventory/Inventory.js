@@ -7,22 +7,25 @@ import './Inventory.css';
 const Inventory = () => {
 
     const { itemId } = useParams();
-    const [item] = useItemDetails(itemId);
-    const { name, img, description, price, quantity, supplier } = item;
+    const [item, setItem] = useItemDetails(itemId);
+    const { name, img, description, price, supplier } = item;
 
-    let [itemQuantity, setItemQuantity] = useState(8);
+    let newQuantity = item.quantity;
 
     const handleDelivered = () => {
-        itemQuantity = itemQuantity - 1;
-        setItemQuantity(itemQuantity);
+        newQuantity = newQuantity - 1;
+        item.quantity = newQuantity;
+        const updatedItem = [...item, item.quantity];
+        setItem(updatedItem);
     }
 
     const handleRestock = event => {
         event.preventDefault();
 
         const inputQuantity = parseInt(event.target.quantity.value);
-        itemQuantity = itemQuantity + inputQuantity;
-        setItemQuantity(itemQuantity);
+        newQuantity = newQuantity + inputQuantity;
+        const updatedItem = [...item, newQuantity];
+        setItem(updatedItem);
     }
 
     return (
@@ -35,8 +38,8 @@ const Inventory = () => {
                 <p>{description}</p>
                 <p>Price: {price}</p>
                 {
-                    (itemQuantity > 0) ?
-                        <p>Quantity: {itemQuantity}</p>
+                    (newQuantity > 0) ?
+                        <p>Quantity: {newQuantity}</p>
                         :
                         <p>Sold Out</p>
                 }
