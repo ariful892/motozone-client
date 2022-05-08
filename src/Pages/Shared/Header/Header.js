@@ -30,8 +30,13 @@ const Header = () => {
                             <Nav.Link className='text-white' as={Link} to='/advanced'>Advanced</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link className='text-white' as={Link} to='/blogs'>Blogs</Nav.Link>
-                            <Nav.Link className='text-white' as={Link} to='/about'>About</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link className='text-white' as={Link} to='/manage'>Manage</Nav.Link>
+                                    <Nav.Link className='text-white' as={Link} to='/add'>Add</Nav.Link>
+                                    <Nav.Link className='text-white' as={Link} to='/myitems'>My Items</Nav.Link>
+                                </>
+                            }
 
                             {
                                 user ?

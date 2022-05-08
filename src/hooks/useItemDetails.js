@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 
-const useServiceDetail = serviceId => {
+const useItemDetail = itemId => {
 
-    const [service, setService] = useState({});
+    const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `https://secret-eyrie-78207.herokuapp.com/service/${serviceId}`;
+        const url = `https://secret-eyrie-78207.herokuapp.com/service/${itemId}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setService(data))
-    }, [serviceId]);
+            .then(data => setItem(data))
+    }, [itemId]);
 
-    return [service];
+    return [item];
 }
 
-export default useServiceDetail;
+export default useItemDetail;
