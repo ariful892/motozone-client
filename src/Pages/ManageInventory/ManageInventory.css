@@ -1,0 +1,13 @@
+.new-item-btn {
+    background-color: rgba(38, 246, 125, 0.883);
+
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+}
+
+.new-item-btn:hover {
+    color: rgba(14, 119, 58, 0.883);
+    background-color: white;
+}
