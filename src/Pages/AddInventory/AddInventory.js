@@ -27,7 +27,8 @@ const AddInventory = () => {
         <div className='w-50 mx-auto'>
             <h2 className='add-item-title'>Add New Item</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-3 rounded-3' placeholder='Item Name' {...register("name", { required: true })} />
+                <input className='mb-3 rounded-3' placeholder='Email' type="email" {...register("email", { required: true })} />
+                <input className='mb-3 rounded-3' placeholder='Item Name' type="text" {...register("name", { required: true })} />
                 <input className='mb-3 rounded-3' placeholder='Photo URL' type="text" {...register("img", { required: true })} />
                 <textarea className='mb-3 rounded-3' placeholder='Description' {...register("description", { required: true })} />
                 <input className='mb-3 rounded-3' placeholder='Price' type="number" {...register("price", { required: true })} />

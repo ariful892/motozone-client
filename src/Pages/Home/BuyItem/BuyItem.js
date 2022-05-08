@@ -8,7 +8,7 @@ const BuyItem = () => {
             <img className='img-fluid mt-5 rounded-2' src={motor} alt="" />
             <div className='buy-item-detail'>
                 <h1>We Buy Bikes</h1>
-                <p>Whether you are looking for an upgrade or ready to sell, Used Motorcycle Store is your one-stop-shop for all things two-wheeled! Simply click Cash Offer below, provide your motorcycle details, and get a cash offer in less than 24 hours, shipping included. It’s that easy!</p>
+                <p>Whether you are looking for an upgrade or ready to sell, Used Motorcycle Store is your one-stop-shop for all things two-wheeled!</p>
                 <button className='new-item-btn px-4 py-1 fs-3'>Contact</button>
             </div>
         </div>

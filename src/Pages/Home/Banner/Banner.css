@@ -1,6 +1,7 @@
 .banner-container {
     display: flex;
     margin: 50px;
+    flex-direction: row;
 }
 
 .title-container {
@@ -27,7 +28,10 @@
 **********************************************/
 
 @media only screen and(max-width:692px) {
-    .banner-container {
-        flex-direction: column;
+
+
+    .title-container {
+        display: block;
+        width: 100%;
     }
 }

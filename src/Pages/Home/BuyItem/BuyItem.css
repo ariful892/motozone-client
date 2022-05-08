@@ -7,10 +7,17 @@
 }
 
 .buy-item-detail {
-    color: rgb(23, 244, 130);
+    color: rgb(16, 217, 113);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     position: absolute;
-    top: 50px;
+    bottom: 10px;
     padding: 20px;
+}
+
+@media only screen and (max-width:692px) {
+    .buy-item-detail {
+        bottom: 0px;
+        padding: 0px;
+    }
 }
