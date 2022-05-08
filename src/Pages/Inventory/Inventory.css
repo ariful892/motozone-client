@@ -1,0 +1,16 @@
+.inventory-btn {
+    background-color: rgba(246, 38, 38, 0.883);
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+.inventory-btn:hover {
+    color: rgba(246, 38, 38, 0.883);
+    background-color: white;
+}
+
+.restock-title {
+    color: rgb(149, 230, 29);
+}

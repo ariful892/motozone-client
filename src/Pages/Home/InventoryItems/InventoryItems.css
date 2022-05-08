@@ -11,3 +11,20 @@
     gap: 40px;
     margin-top: 80px;
 }
+
+.manage-inventories {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(230, 59, 29);
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.manage-inventories:hover {
+    background-color: white;
+    color: red;
+}

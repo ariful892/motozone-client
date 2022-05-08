@@ -1,0 +1,37 @@
+.manage-item-container {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border: 1px solid red;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.manage-item {
+    display: flex;
+}
+
+.delete-btn {
+    font-size: 30px;
+    color: rgba(236, 37, 37, 0.94);
+}
+
+@media only screen and (max-width:692px) {
+    .manage-item-container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .manage-item {
+        flex-direction: column;
+    }
+
+    .delete-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}

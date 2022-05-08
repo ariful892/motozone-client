@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 const useItems = () => {
 
@@ -9,7 +9,7 @@ const useItems = () => {
             .then(data => setItems(data))
     }, []);
 
-    return [items];
+    return [items, setItems];
 }
 
 export default useItems;
