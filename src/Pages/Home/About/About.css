@@ -1,17 +1,16 @@
 .about {
     display: flex;
-    margin: 50px;
+    margin: 60px;
 }
 
 .about-img {
-    margin: 50px;
+    margin: 30px;
     border-radius: 40%;
 }
 
 .about-text {
     color: rgb(214, 172, 238);
-    display: flex;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 
@@ -19,8 +18,13 @@
      responsive design for mobile devices 
 **********************************************/
 
-@media only screen and(max-width:692px) {
+@media only screen and (max-width:692px) {
     .about {
         flex-direction: column;
+        margin: 15px;
+    }
+
+    .about-text {
+        margin-top: 10px;
     }
 }

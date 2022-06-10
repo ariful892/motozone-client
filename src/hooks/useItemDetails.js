@@ -11,7 +11,7 @@ const useItemDetail = itemId => {
             .then(data => setItem(data))
     }, [itemId]);
 
-    return [item, setItem];
+    return { item, setItem };
 }
 
 export default useItemDetail;

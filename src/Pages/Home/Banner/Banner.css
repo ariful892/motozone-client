@@ -1,7 +1,6 @@
 .banner-container {
     display: flex;
     margin: 50px;
-    flex-direction: row;
 }
 
 .title-container {
@@ -27,11 +26,20 @@
      responsive design for mobile devices 
 **********************************************/
 
-@media only screen and(max-width:692px) {
+@media only screen and (max-width:692px) {
 
+
+    .banner-container {
+        flex-direction: column;
+        margin: 20px;
+    }
 
     .title-container {
-        display: block;
-        width: 100%;
+        width: 90%;
     }
+
+    .banner {
+        width: 90%;
+    }
+
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useItems from '../../../hooks/useItems';
+import Loading from '../../Shared/Loading/Loading';
 import InventoryItem from '../InventoryItem/InventoryItem';
 import './InventoryItems.css';
 
@@ -9,6 +10,10 @@ const InventoryItems = () => {
     const [items] = useItems();
     const displayItem = items.slice(0, 6);
     const navigate = useNavigate();
+
+    if (items.length < 1) {
+        <Loading></Loading>
+    }
 
     const navigateToManageInventory = () => {
         navigate('/manage');

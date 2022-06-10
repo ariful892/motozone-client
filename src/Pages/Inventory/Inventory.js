@@ -65,10 +65,10 @@ const Inventory = () => {
                 }
                 <p>Supplier: {supplier}</p>
             </div>
-            <button disabled={newQuantity == 0} onClick={handleDelivered} className='inventory-btn px-4 py-1'>Delivered</button>
+            <button disabled={newQuantity === 0} onClick={handleDelivered} className='inventory-btn px-4 py-1'>Delivered</button>
             <h4 className='restock-title mt-5'>Restock the item</h4>
             <form onSubmit={handleRestock}>
-                <input className='mt-3 rounded border-0' type="number" name="quantity" id="" required />
+                <input className='mt-3 rounded border-0' type="number" name="quantity" id="" placeholder='Enter Item Quantity' required />
                 <input className='inventory-btn ms-3 px-3' type="submit" value="Restock" />
             </form>
         </div>

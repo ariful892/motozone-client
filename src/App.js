@@ -12,6 +12,7 @@ import AddInventory from './Pages/AddInventory/AddInventory';
 import MyItems from './Pages/MyItems/MyItems';
 import NotFound from './Pages/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
+import Loading from './Pages/Shared/Loading/Loading';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+
     </div>
   );
 }
