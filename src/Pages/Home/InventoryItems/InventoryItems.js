@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useItems from '../../../hooks/useItems';
 import Loading from '../../Shared/Loading/Loading';
@@ -7,13 +7,27 @@ import './InventoryItems.css';
 
 const InventoryItems = () => {
 
-    const [items] = useItems();
-    const displayItem = items.slice(0, 6);
+    // const [items] = useItems();
+    // const displayItem = items.slice(0, 6);
     const navigate = useNavigate();
+    const [items, setItems] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
-    if (items.length < 1) {
-        <Loading></Loading>
+
+    useEffect(() => {
+        fetch('https://nameless-mesa-03450.herokuapp.com/item')
+            .then(res => res.json())
+            .then(data => {
+                setItems(data);
+                setIsLoading(false);
+            })
+    }, []);
+
+    if (isLoading) {
+        return <Loading></Loading>
     }
+
+    const displayItem = items.slice(0, 6);
 
     const navigateToManageInventory = () => {
         navigate('/manage');
