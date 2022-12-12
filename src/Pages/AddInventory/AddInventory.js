@@ -8,7 +8,7 @@ const AddInventory = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = 'https://nameless-mesa-03450.herokuapp.com/item';
+        const url = 'https://motozone-server-production.up.railway.app/item';
         fetch(url, {
             method: 'POST',
             headers: {

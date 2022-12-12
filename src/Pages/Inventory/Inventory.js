@@ -1,13 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useItemDetails from '../../hooks/useItemDetails';
+import Loading from '../Shared/Loading/Loading';
 
 import './Inventory.css';
 
 const Inventory = () => {
 
     const { itemId } = useParams();
-    let [item, setItem] = useItemDetails(itemId);
+    // let [item, setItem] = useItemDetails(itemId);
+
+    let [item, setItem] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const url = `https://motozone-server-production.up.railway.app/item/${itemId}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                setItem(data)
+                setIsLoading(false)
+            })
+    }, [itemId]);
+
+
     let { name, img, description, price, quantity, supplier } = item;
     console.log(item);
 
@@ -32,7 +48,7 @@ const Inventory = () => {
     }
 
     useEffect(() => {
-        const url = `https://nameless-mesa-03450.herokuapp.com/item/${itemId}`;
+        const url = `https://motozone-server-production.up.railway.app/item/${itemId}`;
 
         fetch(url, {
             method: 'PUT',
@@ -46,6 +62,11 @@ const Inventory = () => {
                 console.log('Success', data);
             });
     }, [item]);
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
 
 
     return (

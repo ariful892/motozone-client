@@ -15,7 +15,7 @@ const MyItems = () => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
 
-            const url = `https://nameless-mesa-03450.herokuapp.com/item/${id}`;
+            const url = `https://motozone-server-production.up.railway.app/item/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

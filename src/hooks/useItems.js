@@ -9,7 +9,7 @@ const useItems = () => {
 
 
     useEffect(() => {
-        fetch('https://nameless-mesa-03450.herokuapp.com/item')
+        fetch('https://motozone-server-production.up.railway.app/item')
             .then(res => res.json())
             .then(data => {
                 setItems(data);
